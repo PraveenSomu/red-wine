@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.logo{
+    margin-left: 20px;
+    font-family: "Great Vibes", serif;
+    font-weight: 1000;
+    font-style: oblique;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+}
+.logo #winelogo{
+    color: #dc3545;
+    margin-bottom: 14px;
+    animation: qut;
+    animation-duration:1s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    
+}
+.logo span{
+
+    animation: qut1;
+    animation-duration:.7s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes qut { 
+    0%{color: white;}
+
+    30%{color: rgb(236, 208, 137);}
+
+    65%{color: rgb(13, 232, 54);}
+
+    90%{color:rgb(17, 221, 177);}
+
+    100%{color:tomato;}
+
+}
+@keyframes qut1 {
+    from{opacity: 0%;}
+    to{ opacity: 100%;}
+    
+}
+.navbar{
+    width: 100vw;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    background-color:#0C1446;
+    color:white;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    border-bottom: 5px solid #ffc107;
+}
+.navbar ul{
+    padding: 10px 30px;
+    margin-top:0;
+    margin-bottom: auto;
+    margin-left: 40px;
+  
+}
+.navbar ul li{ 
+    display: inline-flex;
+    list-style: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.1ms;
+    transition-timing-function: ease;
+    position: relative;
+    
+}
+
+
+.navbar ul li::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    transition:all .5s ;
+    background-color:white;
+
+}
+
+.navbar ul li:hover::before{width: 100%;}
+
+.navbar ul li:hover{ cursor: pointer; color:white;}
+
+
+#insta{color: #dc3545;font-size: 1.5rem; padding: 0px 20px; text-decoration: none;}
+#twt{color: #0dbefd;font-size: 1.5rem; padding: 0px 15px;text-decoration: none;}
+#whts{color:green;font-size: 1.5rem; padding: 0px 15px;text-decoration: none;}
+
+#twt:hover{color: rgb(255, 255, 255); cursor: pointer;}
+#insta:hover{color: rgb(255, 255, 255);cursor: pointer;}
+#whts:hover{color: rgb(255, 255, 255);cursor: pointer;}
+

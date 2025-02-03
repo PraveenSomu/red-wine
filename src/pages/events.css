@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#eventbg {
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+    text-align: center;
+    background: url(../images/event/eventbg.jpg);
+    background-size: cover;
+    color: white;
+    filter: grayscale(70%);
+}
+
+#eventbg h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    position: relative;
+    animation: eventanimi;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes eventanimi {
+
+    from {
+        font-size: 5rem;
+        top: 200px;
+    }
+
+    to {
+        top: 0px;
+        opacity: 0%;
+        color: rgb(219, 175, 18);
+    }
+
+
+}
+
+
+
+
+
+
+
+#eventbg h6 {
+    color: aliceblue;
+     font-size: 1rem;
+     writing-mode: vertical-lr;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 340px;
+     opacity: 65%;
+ 
+ }
+ 
+ #eventbg i {
+    color: aliceblue;
+     font-size: 1.5rem;
+     margin-top: 8px;
+     animation-name: resanimi2;
+     animation-timing-function: ease-in-out;
+     animation-duration: 1s;
+     animation-delay: 1s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ 
+ }
+ 
+ @keyframes resanimi2 {
+     0% {
+         transform: translateY(6px);
+     }
+ 
+     50% {
+         transform: translateY(0px);
+     }
+ 
+     100% {
+         transform: translateY(6px);
+     }
+ }
+
+ 
+
+
+#event0cont {
+    margin-top: 60px;
+    background-color: #050A30;
+}
+
+#eventcont {
+    margin-top: 60px;
+    background-color: #2F5233;
+}
+
+#eventcont1 {
+    margin-top: 60px;
+    background-color: #341948;
+}
+
+#eventcont2 {
+    margin-top: 60px;
+    background-color: #821D30;
+}
+
+
+#event0box div,
+#eventbox div,
+#eventbox1 div,
+#eventbox2 div {
+    width: 260px;
+    height: 400px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-color: #7EC8E3;
+
+}
+
+#eventbox div {
+    background-color: #B1D8B7;
+}
+
+#eventbox1 div {
+    background-color: #9388A2;
+}
+
+#eventbox2 div {
+    background-color: #F7D6D0;
+}
+
+
+#event0box div img,
+#eventbox div img,
+#eventbox1 div img,
+#eventbox2 div img {
+    margin-top: 20px;
+    height: 280px;
+    width: 240px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius:10px;
+}
+
+#event0box h3,
+#eventbox h3,
+#eventbox1 h3,
+#eventbox2 h3 {
+    padding: 10px;
+    color: #050A30;
+    text-transform: capitalize;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#eventbox h3 {
+    color: #2F5233;
+}
+
+#eventbox1 h3 {
+    color: #341948;
+}
+
+#eventbox2 h3 {
+    color: #821D30;
+}
+
+
+#event0box p {
+    padding: 12px;
+    color: rgb(84, 82, 82);
+}
+
+#event0box div:hover img {
+    cursor: pointer;
+    width: 260px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+
+}
+
+#eventbox div:hover img {
+    cursor: pointer;
+    width: 260px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+
+}
+
+#eventbox1 div:hover img {
+    cursor: pointer;
+    width: 260px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+    border-radius: 0px;
+
+
+}
+
+#eventbox2 div:hover img {
+    cursor: pointer;
+    width: 260px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+
+}
+
+#event0box div:hover {
+    box-shadow: 1px 1px 6px 6px #7EC8E3;
+}
+
+#eventbox div:hover {
+    box-shadow: 1px 1px 6px 6px #B1D8B7;
+}
+
+#eventbox1 div:hover {
+    box-shadow: 1px 1px 6px 6px #9388A2;
+}
+
+#eventbox2 div:hover {
+    box-shadow: 1px 1px 6px 6px #F7D6D0;
+}
+
+.ibtn{
+    position: fixed;
+    width: 40px;
+    height:40px;
+    background-color: #341948;
+    color: aliceblue;
+    bottom: 20px;
+    right: 20px;
+    padding-top: 3px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 5px;
+    transition: all 1s .1s ease;
+    animation: ibtn 2s ease .3s infinite;
+}
+.ibtn:hover{
+    color: #341948;
+    background-color: aliceblue;
+    
+}
+@keyframes ibtn {
+    0%{transform: translateY(6px);}
+    50%{transform: translateY(0px);}
+    100%{transform: translateY(6px);}
+    
+}
+.myname{
+    text-align: center;
+    margin-top: 20px;
+    opacity: 75%;
+}

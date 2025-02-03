@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#shopbg {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background: url(../images/shop/shopbg.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#shopbg h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    position: relative;
+    animation: shopanimi;
+    animation-timing-function:ease-in-out;
+    animation-duration: 2.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes shopanimi {
+    from{font-size: 5rem;
+         top: 180px;
+        }
+    to{
+        top: 0px;
+        opacity: 0%;
+        color: rgb(219, 175, 18);
+    }
+
+}
+
+
+
+#shopbg h6 {
+    color: aliceblue;
+     font-size: 1rem;
+     writing-mode: vertical-lr;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 310px;
+     opacity: 65%;
+ 
+ }
+ 
+ #shopbg i {
+    color: aliceblue;
+     font-size: 1.5rem;
+     margin-top: 8px;
+     animation-name: resanimi2;
+     animation-timing-function: ease-in-out;
+     animation-duration: 1s;
+     animation-delay: 1s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+ 
+ }
+ 
+ @keyframes resanimi2 {
+     0% {
+         transform: translateY(6px);
+     }
+ 
+     50% {
+         transform: translateY(0px);
+     }
+ 
+     100% {
+         transform: translateY(6px);
+     }
+ }
+ 
+
+#shopcont {
+    margin-top: 60px;
+   
+}
+
+#shopbox div {
+    width: 260px;
+    height: 460px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 2px 2px 7px 2px rgb(150, 147, 147);
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+#shopbox div img {
+    margin-top: 20px;
+    height: 280px;
+    width: 240px;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#shopbox h3 {
+    padding: 10px;
+    color: #fd7e14;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#shopbox p {
+    padding: 12px;
+    color: rgb(84, 82, 82);
+}
+
+#shopbox div:hover img {
+    padding: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#shopbox div:hover {
+    box-shadow: 2px 2px 7px 2px rgb(216, 114, 114);
+}
+
+.shopbox2 {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-bottom: 80px;
+    margin-top: 60px;
+
+}
+
+#map {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 2px rgb(150, 147, 147);
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.shopbox1 i {
+    font-size: 1.8rem;
+    padding: 10px;
+    line-height: 30px;
+}
+
+#shopcont1 a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.shopbox1 {
+    height: 20%;
+    width: 70%;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 7px 2px rgb(150, 147, 147);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear;
+
+}
+
+#shopcont1 #insta {
+    color: #dc3545;
+}
+
+#shopcont1 #twt {
+    color: #0dbefd;
+}
+
+#shopcont1 #whts {
+    color: green;
+}
+
+#shopcont1 a:hover {
+    color: black;
+}
+
+#shopcont1 #insta:hover {
+    color: black;
+}
+
+#shopcont1 #whts:hover {
+    color: black;
+}
+
+.shopbox1:hover {
+    height: auto;
+    width: 73%;
+
+}

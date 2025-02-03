@@ -1,0 +1,327 @@
+* {
+    user-select: none;
+    box-sizing: border-box;
+}
+
+#resbg {
+    background: url(../images//resarvation/resbkg.jpg);
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-size: cover;
+    color: white;
+    margin-top: 0;
+
+}
+
+#resbg h2 {
+    color: darkred;
+    font-size: 4rem;
+    padding-top: 20%;
+    animation: resanimi;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes resanimi {
+    0% {
+        letter-spacing: 1px;
+    }
+
+    50% {
+        letter-spacing: 10px;
+    }
+
+    100% {
+        letter-spacing: 1px;
+    }
+
+}
+
+#resbg h6 {
+    color: black;
+    font-size: 1rem;
+    writing-mode: vertical-lr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    opacity: 65%;
+
+}
+
+#resbg i {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 8px;
+    animation-name: resanimi2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes resanimi2 {
+    0% {
+        transform: translateY(6px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(6px);
+    }
+}
+
+.resbox {
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .1s;
+    transition-timing-function: ease;
+    overflow: hidden;
+    box-shadow: 15px 15px 15px rgb(116, 114, 114), inset 4px 4px 10px white;
+
+
+}
+
+.resbox img {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .1s;
+    transition-timing-function: ease;
+
+}
+
+.resbox:hover img {
+    width: 300px;
+    height: 250px;
+    padding: 0px;
+}
+
+#rescont {
+    margin-top: 30px;
+    height: 500px;
+    text-align: center;
+}
+
+#rescont img {
+    width: 400px;
+    height: 400px;
+    box-shadow: 15px 15px 15px rgb(116, 114, 114), inset 4px 4px 10px white;
+}
+
+#rescont h2 {
+    margin-top: 20px;
+    color: #dc3545;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#rescont1 {
+    height: 620px;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    width: 580px;
+    height: 610px;
+    overflow: hidden;
+    padding: 30px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: .1s;
+    transition-timing-function: ease;
+
+
+}
+
+.login:hover {
+    box-shadow: 8px 8px 15px 8px rgb(116, 114, 114);
+}
+
+.login form {
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.login h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    color: #ffc107;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+form #box1 {
+    position: relative;
+    margin: 20px 0px;
+}
+
+#box1 input {
+    width: 200px;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+
+#box1 label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+
+#box1 span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 250px;
+    height: 2px;
+    background: #2691d9;
+}
+
+#box1 input:focus~label,
+#box1 input:valid~label {
+    top: -5px;
+    color: #2691d9;
+}
+
+#box1 #spn1::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 400px;
+    height: 2px;
+    background: #2691d9;
+}
+
+.btn2 {
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #ffc107;
+    background-color: white;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    transition: 1s;
+
+}
+
+.btn2:hover {
+    color: white;
+    background-color: #ffc107;
+}
+
+.slider-container {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slider-container h3 {
+    margin-top: 20px;
+    color: #dc3545;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.slider1 {
+    width: 80px;
+    height: 250px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 40px;
+    overflow: hidden;
+    text-align: center;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-delay: .1s;
+
+
+
+
+
+}
+
+.slider2 {
+    width: 80px;
+    height: 300px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 40px;
+    overflow: hidden;
+    text-align: center;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-delay: .1s;
+
+
+
+}
+
+.slider3 {
+    width: 80px;
+    height: 350px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 40px;
+    overflow: hidden;
+    text-align: center;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-delay: .1s;
+
+
+}
+
+.slider-container div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.slider-container div:hover {
+    width: 320px;
+    height: 400px;
+    overflow: visible;
+}
